@@ -1,0 +1,45 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{amsmath} 
+
+\hyphenation{op-tical net-works semi-conduc-tor}    % Silbentrennung
+
+\begin{document}
+
+    \title{Organic Approaches To Traffic Control}
+
+
+    %\hfill mds
+    %\hfill August 26, 2015
+    %Die Autoren
+    \author{
+    \IEEEauthorblockN{University of L\"ubeck, L\"ubeck, Germany}
+    \IEEEauthorblockA{Institute of Computer Engineering\\
+    Philipp Bolze\\
+    Philipp.Bolze@student.uni-luebeck.de}
+    \and
+    \IEEEauthorblockN{University of L\"ubeck, L\"ubeck, Germany}
+    \IEEEauthorblockA{Institute of Computer Engineering\\
+    Leif Jonas von Koschitzky\\
+    Leif.Vonkoschitzky@student.uni-luebeck.de}
+    }
+   
+    %Hier wird der Titel eingebunden
+    \maketitle
+    \IEEEpeerreviewmaketitle
+    
+    \tableofcontents
+    
+    %Hier werden die Kapitel eingebunden
+    \input{abstract}        %   section: abstract
+    \input{gerabstract}
+    \input{sota}            %   section: State of the art
+    \input{otc}             %   section: Organic traffic control
+    \input{sc}              %   section: self control
+    \input{conclusion}
+    
+    %Hier werden die References eingebunden
+    \input{bib}         
+
+\end{document}

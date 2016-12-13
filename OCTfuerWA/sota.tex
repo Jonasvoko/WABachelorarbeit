@@ -1,0 +1,21 @@
+\section{Motivation}
+More and more vehicles are driving on the streets in our growing cities. This is why it gets increasingly more important to implement traffic control architectures that aim to reduce waiting time for every traffic participant. To reduce waiting time, means to decrease environmental pollution, reduce fuel consumption and to save time. To achieve all that, the control of traffic lights needs to be optimised to the local conditions. Some of those conditions are set like the structure of the road network itself and speed limits. Others can change dramatically. Examples would be the number of vehicles or the direction the vehicles are coming from. Those conditions can change by time of day, season or to special events such as rock concerts or catastrophes. Therefore a traffic control architecture can only be optimal if it is adapting to the situation at hand.
+
+Furthermore, new technologies like intersection assistants are developed by automobile manufacturers. These new technologies need to communicate with the traffic control system. So traffic control systems should be able to give information to traffic participants by design. Otherwise a technology like the intersection assistant cannot reach its full potential.
+
+
+\section{State of the Art}
+
+
+\subsection{Fixed Time Controller}
+Signalised intersections are widely used to regulate traffic flows. The simplest way to control a signalised intersection is a fixed time controller (FTC). FTCs have multiple phases that enable the traffic to flow in different directions and setup-times, that allow save transitions between states. The duration of each phase is fixed and the sequence is periodical. As a consequence the cycle time is constant. FTCs are often used in combination with more advanced traffic control architectures which are controlling the FTCs. The organic approach in section 3 for example, uses a FTC.
+
+\subsection{Traffic Control Center}
+At this point nearly all big urban areas have implemented a traffic control center (TCC). TCCs are using a centralised computer system to manage all traffic controllers in an area. A common example is Split, Cycle and Offset optimisation Technique (SCOOT) \cite{scoot}, which is used in more than 200 installations worldwide \cite{organic1}. SCOOT gathers information on traffic flows from detectors and calculates a global cycle time, which is then used for all intersections in the network. A common cycle time is necessary for successive intersections to allow recurring green waves. 
+
+Another widely used example is the Sydney Coordinated Adaptive Traffic System (SCATS) \cite{scats}. SCATS needs to have a TCC too and a reliable network so the TCC can gather information from the whole system. Furthermore SCATS is able to adapt to new traffic situations and can change cycle times for single controls or groups of controls.
+
+\subsection{VS-PLUS}
+The VS-PLUS \cite{laemmer15} is an adaptive controller for traffic lights that measures the waiting time of vehicles at intersections. When a limit is exceeded, the VS-PLUS adapts its model to prevent further transgressions. Every VS-PLUS needs specially to be calibrated by a traffic engineer for the local traffic situation. It it used for example in Dresden and will serve as an comparison to an organic approach in section 5.
+
+
